@@ -1,4 +1,5 @@
 # jslib
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f53915b74a9848098d7e0cbbae59229e)](https://www.codacy.com/app/Glinkis/jslib?utm_source=github.com&utm_medium=referral&utm_content=Glinkis/jslib&utm_campaign=badger)
 [![npm](https://img.shields.io/npm/v/jslib-utils.svg)](https://www.npmjs.com/package/jslib-utils)
 [![license](https://img.shields.io/npm/l/jslib-utils.svg)](https://www.npmjs.com/package/jslib-utils)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/f53915b74a9848098d7e0cbbae59229e)](https://www.codacy.com/app/Glinkis/jslib?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Glinkis/jslib&amp;utm_campaign=Badge_Grade)
