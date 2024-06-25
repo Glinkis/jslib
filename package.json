@@ -45,7 +45,6 @@
     "@happy-dom/global-registrator": "^14.12.3",
     "@types/bun": "latest",
     "@types/node": "^9.4.6",
-    "awesome-typescript-loader": "^5.0.0-0",
     "pre-commit": "^1.2.2",
     "prettier": "^1.11.1",
     "rimraf": "^2.6.2",
