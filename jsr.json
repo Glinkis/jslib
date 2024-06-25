@@ -1,0 +1,21 @@
+{
+  "$schema": "https://jsr.io/schema/config-file.v1.json",
+  "name": "@glinkis/jslib",
+  "version": "2.0.0",
+  "exports": {
+    ".": "./src/index.ts",
+    "./array": "./src/array/index.ts",
+    "./color": "./src/color/index.ts",
+    "./easing": "./src/easing/index.ts",
+    "./event": "./src/event/index.ts",
+    "./interactivity": "./src/interactivity/index.ts",
+    "./math": "./src/math/index.ts",
+    "./misc": "./src/misc/index.ts",
+    "./splines": "./src/splines/index.ts",
+    "./vector2": "./src/vector2/index.ts",
+    "./vector3": "./src/vector3/index.ts"
+  },
+  "publish": {
+    "include": ["LICENSE", "README.md", "src/**/*"]
+  }
+}

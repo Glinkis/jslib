@@ -1,11 +1,10 @@
-import { expect } from "chai";
-import * as mocha from "mocha";
+import { describe, it, expect } from "bun:test";
 import { radianToDegree } from "../../src/math/radianToDegree";
 
 describe("math/radianToDegree", () => {
   it("calculates the correct values", () => {
-    expect(radianToDegree(0)).to.equal(0);
-    expect(radianToDegree(Math.PI)).to.equal(180);
-    expect(radianToDegree(Math.PI * 2)).to.equal(360);
+    expect(radianToDegree(0)).toBe(0);
+    expect(radianToDegree(Math.PI)).toBe(180);
+    expect(radianToDegree(Math.PI * 2)).toBe(360);
   });
 });

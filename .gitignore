@@ -2,6 +2,6 @@
 .vs
 .vscode
 node_modules
+docs
 dist
 lib
-es

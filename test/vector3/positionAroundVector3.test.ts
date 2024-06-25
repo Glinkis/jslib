@@ -1,5 +1,4 @@
-import { expect } from "chai";
-import * as mocha from "mocha";
+import { describe, it, expect } from "bun:test";
 import { positionAroundVector3 } from "../../src/vector3/positionAroundVector3";
 
 const vector1 = { x: 0, y: 0, z: 0 };
@@ -11,13 +10,13 @@ const vector6 = { x: 0, y: 1, z: 0 };
 
 describe("vector3/positionAroundVector3", () => {
   it("produces the correct vector", () => {
-    expect(positionAroundVector3(vector1, 1, 0, 0)).to.deep.equal(vector3);
-    expect(positionAroundVector3(vector2, 1, 0, 0)).to.deep.equal(vector4);
-    expect(positionAroundVector3(vector1, 1, Math.PI, 0)).to.deep.equal(
+    expect(positionAroundVector3(vector1, 1, 0, 0)).toStrictEqual(vector3);
+    expect(positionAroundVector3(vector2, 1, 0, 0)).toStrictEqual(vector4);
+    expect(positionAroundVector3(vector1, 1, Math.PI, 0)).toStrictEqual(
       vector5
     );
     expect(
       positionAroundVector3(vector1, 1, Math.PI / 2, Math.PI)
-    ).to.deep.equal(vector6);
+    ).toStrictEqual(vector6);
   });
 });

@@ -1,5 +1,4 @@
-import { expect } from "chai";
-import * as mocha from "mocha";
+import { describe, it, expect } from "bun:test";
 import { traverse } from "../../src/vector3/traverse";
 
 describe("vector3/scale", () => {
@@ -8,7 +7,7 @@ describe("vector3/scale", () => {
     traverse({ x: 0, y: 0, z: 0 }, () => {
       steps += 1;
     });
-    expect(steps).to.equal(1);
+    expect(steps).toBe(1);
   });
 
   it("traverses a vector with an actual size", () => {
@@ -16,7 +15,7 @@ describe("vector3/scale", () => {
     traverse({ x: 1, y: 2, z: 1 }, () => {
       steps += 1;
     });
-    expect(steps).to.equal(12);
+    expect(steps).toBe(12);
   });
 
   it("does the correct amount of steps", () => {
@@ -28,6 +27,6 @@ describe("vector3/scale", () => {
       },
       0.1
     );
-    expect(steps).to.equal(2420);
+    expect(steps).toBe(2420);
   });
 });

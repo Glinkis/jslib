@@ -1,5 +1,4 @@
-import { expect } from "chai";
-import * as mocha from "mocha";
+import { describe, it, expect } from "bun:test";
 import * as easing from "../../src/easing";
 
 /**
@@ -14,11 +13,11 @@ function test(name: string, values: number[]) {
     const delta = 0.00001;
 
     it("calculates correct values", () => {
-      expect(method(0)).to.be.closeTo(values[0], delta);
-      expect(method(0.25)).to.be.closeTo(values[1], delta);
-      expect(method(0.5)).to.be.closeTo(values[2], delta);
-      expect(method(0.75)).to.be.closeTo(values[3], delta);
-      expect(method(1.0)).to.be.closeTo(values[4], delta);
+      expect(method(0)).toBeCloseTo(values[0], delta);
+      expect(method(0.25)).toBeCloseTo(values[1], delta);
+      expect(method(0.5)).toBeCloseTo(values[2], delta);
+      expect(method(0.75)).toBeCloseTo(values[3], delta);
+      expect(method(1.0)).toBeCloseTo(values[4], delta);
     });
   });
 }

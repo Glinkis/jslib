@@ -1,8 +1,63 @@
 {
   "name": "jslib-utils",
   "author": "Victor Glindås",
-  "version": "1.39.1",
+  "version": "2.0.0",
   "description": "A modular javascript utility library.",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "typings": "dist/index.d.ts",
+  "exports":{
+    ".": {
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "default": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    },
+    "./*": {
+      "import":{
+        "types": "./dist/*/index.d.mts",
+        "default": "./dist/*/index.mjs"
+      },
+      "default": {
+        "types": "./dist/*/index.d.ts",
+        "default": "./dist/*/index.js"
+      }
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "docs": "typedoc --out docs src",
+    "build": "tsup",
+    "prettier": "prettier --write \"./*.ts\" \"src/**/*.ts\" \"test/**/*.ts\"",
+    "tsc": "tsc",
+    "test": "bun test",
+    "test:watch": "bun test --watch"
+  },
+  "pre-commit": "prettier, test",
+  "devDependencies": {
+    "@happy-dom/global-registrator": "^14.12.3",
+    "@types/bun": "^1.1.5",
+    "@types/node": "^20.14.8",
+    "pre-commit": "^1.2.2",
+    "prettier": "^3.3.2",
+    "tsup": "^8.1.0",
+    "typedoc": "^0.26.2",
+    "typedoc-plugin-external-module-name": "^4.0.6",
+    "typescript": "^5.5.2"
+  },
+  "homepage": "https://github.com/Glinkis/jslib#readme",
+  "bugs": {
+    "url": "https://github.com/Glinkis/jslib/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Glinkis@github.com/Glinkis/jslib.git"
+  },
   "keywords": [
     "animation",
     "easing",
@@ -19,60 +74,5 @@
     "es6",
     "modular",
     "utilities"
-  ],
-  "main": "lib/index.js",
-  "module": "es/index.js",
-  "typings": "lib/index.d.ts",
-  "files": ["dist", "lib", "es"],
-  "scripts": {
-    "lint": "tslint ./",
-    "prebuild": "rimraf dist && rimraf lib && rimraf es",
-    "build":
-      "tsc && tsc --module commonjs -outDir lib && rollup -c rollup.config.ts && typedoc --out docs --target es6 --theme minimal src",
-    "prettier": "prettier --write \"./*.ts\" \"src/**/*.ts\" \"test/**/*.ts\"",
-    "test": "karma start --single-run",
-    "test:watch": "karma start"
-  },
-  "pre-commit": "prettier, lint, test, build",
-  "repository": {
-    "type": "git",
-    "url": "git+https://Glinkis@github.com/Glinkis/jslib.git"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Glinkis/jslib/issues"
-  },
-  "homepage": "https://github.com/Glinkis/jslib#readme",
-  "devDependencies": {
-    "@types/chai": "^4.1.2",
-    "@types/mocha": "^2.2.48",
-    "@types/node": "^9.4.6",
-    "@types/webpack": "^4.0.0",
-    "awesome-typescript-loader": "^5.0.0-0",
-    "chai": "^4.1.2",
-    "karma": "^2.0.0",
-    "karma-chai": "^0.1.0",
-    "karma-chrome-launcher": "^2.2.0",
-    "karma-mocha": "^1.3.0",
-    "karma-sourcemap-loader": "^0.3.7",
-    "karma-webpack": "^2.0.13",
-    "mocha": "^5.0.4",
-    "pre-commit": "^1.2.2",
-    "prettier": "^1.11.1",
-    "rimraf": "^2.6.2",
-    "rollup": "^0.56.5",
-    "rollup-plugin-node-resolve": "^3.2.0",
-    "rollup-plugin-sourcemaps": "^0.4.2",
-    "rollup-plugin-uglify": "^3.0.0",
-    "source-map-loader": "^0.2.3",
-    "ts-loader": "^4.0.1",
-    "ts-node": "^5.0.1",
-    "tslint": "^5.9.1",
-    "tslint-config-prettier": "^1.9.0",
-    "typedoc": "^0.11.0",
-    "typedoc-plugin-external-module-name": "^1.1.1",
-    "typescript": "^2.7.2",
-    "webpack": "^4.1.1"
-  },
-  "dependencies": {}
+  ]
 }

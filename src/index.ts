@@ -1,7 +1,6 @@
 /** @module jslib-utils */ /** */
 import * as array from "./array";
 import * as color from "./color";
-import * as dom from "./dom";
 import * as easing from "./easing";
 import * as event from "./event";
 import * as interactivity from "./interactivity";
@@ -13,7 +12,6 @@ import * as vector3 from "./vector3";
 
 export { array };
 export { color };
-export { dom };
 export { easing };
 export { event };
 export { interactivity };
