@@ -20,9 +20,9 @@
     "modular",
     "utilities"
   ],
-  "main": "lib/index.js",
-  "module": "es/index.js",
-  "typings": "lib/index.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "typings": "dist/index.d.ts",
   "files": ["dist"],
   "scripts": {
     "build": "tsup && typedoc --out docs src",
