@@ -7,6 +7,18 @@
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "typings": "dist/index.d.ts",
+  "exports":{
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "default": "./dist/index.js"
+    },
+    "./*": {
+      "types": "./dist/*/index.d.ts",
+      "import": "./dist/*/index.mjs",
+      "default": "./dist/*/index.js"
+    }
+  },
   "files": ["dist"],
   "scripts": {
     "build": "tsup && typedoc --out docs src",
