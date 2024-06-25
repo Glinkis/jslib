@@ -7,7 +7,7 @@ import { decimalPlaces } from "./decimalPlaces";
  * @param value - Value to round.
  * @param radix - Radix.
  */
-export function round(value: number, radix: number = 1) {
+export function round(value: number, radix: number = 1): number {
   value = Math.round(value / radix) * radix;
   return Number(value.toFixed(decimalPlaces(radix)));
 }

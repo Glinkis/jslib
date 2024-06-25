@@ -7,7 +7,7 @@
  * @param min - The minimum boundary.
  * @param max - The maximum boundary.
  */
-export function wrap(value: number, min: number, max: number) {
+export function wrap(value: number, min: number, max: number): number {
   const range = max - min;
 
   if (min === max) {

@@ -5,6 +5,6 @@
  *
  * @param degree - A number representing the degrees to convert.
  */
-export function degreeToRadian(degree: number) {
+export function degreeToRadian(degree: number): number {
   return degree * (Math.PI / 180);
 }

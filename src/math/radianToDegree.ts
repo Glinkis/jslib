@@ -5,6 +5,6 @@
  *
  * @param radian - A number representing the radians to
  */
-export function radianToDegree(radian: number) {
+export function radianToDegree(radian: number): number {
   return (radian * 180) / Math.PI;
 }

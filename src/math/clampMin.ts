@@ -4,7 +4,10 @@
  * @param min
  * @param value
  */
-export function clampMin(min: number | null | undefined, value: number) {
+export function clampMin(
+  min: number | null | undefined,
+  value: number
+): number {
   if (min != null && value <= min) {
     return min;
   }

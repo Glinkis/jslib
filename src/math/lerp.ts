@@ -7,6 +7,6 @@
  * @param end - End value.
  * @param t -  A value in the set [0, 1].
  */
-export function lerp(start: number, end: number, t: number) {
+export function lerp(start: number, end: number, t: number): number {
   return start + (end - start) * t;
 }

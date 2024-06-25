@@ -14,7 +14,7 @@ const defaultDictionary =
 export function randomString(
   length: number,
   dictionary: string = defaultDictionary
-) {
+): string {
   let result = "";
 
   while (result.length !== length) {

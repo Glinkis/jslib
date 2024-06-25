@@ -4,7 +4,10 @@
  * @param max
  * @param value
  */
-export function clampMax(max: number | null | undefined, value: number) {
+export function clampMax(
+  max: number | null | undefined,
+  value: number
+): number {
   if (max != null && value >= max) {
     return max;
   }

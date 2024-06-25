@@ -7,7 +7,7 @@ import { randomRange } from "./randomRange";
  * @param min - Minimum value.
  * @param max - Maximum value.
  */
-export function randomInt(min: number, max: number) {
+export function randomInt(min: number, max: number): number {
   // can't be max + 0.5 otherwise it will round up if `rand`
   // returns `max` causing it to overflow range.
   // -0.5 and + 0.49 are required to avoid bias caused by rounding
