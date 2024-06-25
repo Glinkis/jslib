@@ -14,7 +14,7 @@ export function pointIntersection(
   size1: number,
   vector2: IVector3,
   size2: number
-) {
+): boolean {
   return (
     (vector1.x - vector2.x) ** 2 +
       (vector1.y - vector2.y) ** 2 +
