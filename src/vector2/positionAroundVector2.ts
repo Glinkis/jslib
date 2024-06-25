@@ -18,13 +18,13 @@ const roundToPrecision = (value: number) =>
 export function positionAroundVector2(
   vector: IVector2,
   distance: number,
-  radian: number
+  radian: number,
 ): IVector2 {
   const xAxis = roundToPrecision(Math.cos(radian));
   const yAxis = roundToPrecision(Math.sin(radian));
 
   return {
     x: vector.x + distance * xAxis,
-    y: vector.y + distance * yAxis
+    y: vector.y + distance * yAxis,
   };
 }

@@ -61,6 +61,6 @@ export function positionData(element: HTMLElement) {
     setFinalPosition(x: number, y: number) {
       this.endX = x;
       this.endY = y;
-    }
+    },
   };
 }

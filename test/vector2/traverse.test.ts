@@ -25,7 +25,7 @@ describe("vector2/traverse", () => {
       () => {
         steps += 1;
       },
-      0.1
+      0.1,
     );
     expect(steps).toBe(220);
   });

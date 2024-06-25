@@ -10,7 +10,7 @@
  */
 export function randomRange(
   min: number | null | undefined,
-  max: number | null | undefined
+  max: number | null | undefined,
 ) {
   min = min == null ? Number.MIN_VALUE : min;
   max = max == null ? Number.MAX_VALUE : max;

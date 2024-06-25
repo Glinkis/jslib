@@ -14,7 +14,7 @@ describe("color/hexToRgba", () => {
       r: 144,
       g: 144,
       b: 144,
-      a: 144
+      a: 144,
     });
     expect(hexToRgba("#000000FF")).toStrictEqual({ r: 0, g: 0, b: 0, a: 255 });
     expect(hexToRgba("#0000FF00")).toStrictEqual({ r: 0, g: 0, b: 255, a: 0 });

@@ -13,10 +13,10 @@ describe("vector3/positionAroundVector3", () => {
     expect(positionAroundVector3(vector1, 1, 0, 0)).toStrictEqual(vector3);
     expect(positionAroundVector3(vector2, 1, 0, 0)).toStrictEqual(vector4);
     expect(positionAroundVector3(vector1, 1, Math.PI, 0)).toStrictEqual(
-      vector5
+      vector5,
     );
     expect(
-      positionAroundVector3(vector1, 1, Math.PI / 2, Math.PI)
+      positionAroundVector3(vector1, 1, Math.PI / 2, Math.PI),
     ).toStrictEqual(vector6);
   });
 });

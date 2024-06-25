@@ -25,7 +25,7 @@ describe("vector3/scale", () => {
       () => {
         steps += 1;
       },
-      0.1
+      0.1,
     );
     expect(steps).toBe(2420);
   });

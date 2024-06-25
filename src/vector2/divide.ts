@@ -10,6 +10,6 @@ import { IVector2 } from "../vector2";
 export function divide(vector1: IVector2, vector2: IVector2): IVector2 {
   return {
     x: vector1.x / vector2.x,
-    y: vector1.y / vector2.y
+    y: vector1.y / vector2.y,
   };
 }

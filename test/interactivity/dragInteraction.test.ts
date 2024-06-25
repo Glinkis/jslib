@@ -2,7 +2,7 @@ import { describe, it, expect } from "bun:test";
 import { dragInteraction } from "../../src/interactivity/dragInteraction";
 import {
   ITmpEventListener,
-  trackEventListeners
+  trackEventListeners,
 } from "../testutils/trackEventListeners";
 
 trackEventListeners();
@@ -12,7 +12,7 @@ describe("logic/addDragInteraction", () => {
     (document.body as any).eventListeners as ITmpEventListener[];
 
   const findListener = (type: string) =>
-    listeners() && listeners().find(listener => listener.type === type);
+    listeners() && listeners().find((listener) => listener.type === type);
 
   const interaction = dragInteraction(document.body);
 

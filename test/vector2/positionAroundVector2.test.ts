@@ -12,7 +12,7 @@ describe("vector2/positionAroundVector2", () => {
     expect(positionAroundVector2(vector1, 1, 0)).toStrictEqual(vector3);
     expect(positionAroundVector2(vector1, 1, Math.PI)).toStrictEqual(vector4);
     expect(positionAroundVector2(vector1, 1, Math.PI / 2)).toStrictEqual(
-      vector5
+      vector5,
     );
     expect(positionAroundVector2(vector2, 1, 0)).toStrictEqual({ x: 2, y: 1 });
   });

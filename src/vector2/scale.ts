@@ -10,6 +10,6 @@ import { IVector2 } from "../vector2";
 export function scale(vector: IVector2, value: number): IVector2 {
   return {
     x: vector.x * value,
-    y: vector.y * value
+    y: vector.y * value,
   };
 }

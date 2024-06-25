@@ -33,5 +33,5 @@ export const isMobile = {
       this.isOpera() ||
       this.isWindows()
     );
-  }
+  },
 };

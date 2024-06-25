@@ -8,7 +8,7 @@
  */
 export function relativeDistance(
   event0: { pageX: number; pageY: number },
-  event1: { pageX: number; pageY: number }
+  event1: { pageX: number; pageY: number },
 ): { x: number; y: number } {
   const x = event1.pageX - event0.pageX;
   const y = event1.pageY - event0.pageY;

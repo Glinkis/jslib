@@ -14,7 +14,7 @@ export function mapToRange(
   inStart: number,
   inEnd: number,
   outStart: number,
-  outEnd: number
+  outEnd: number,
 ) {
   value = (value - inStart) / (inEnd - inStart) || 0;
 

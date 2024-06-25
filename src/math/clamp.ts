@@ -20,7 +20,7 @@ import { clampMin } from "./clampMin";
 export function clamp(
   value: number,
   min: number | null | undefined,
-  max: number | null | undefined
+  max: number | null | undefined,
 ) {
   value = clampMax(max, value);
   value = clampMin(min, value);

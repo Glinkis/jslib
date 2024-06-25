@@ -13,7 +13,7 @@ const defaultDictionary =
  */
 export function randomString(
   length: number,
-  dictionary: string = defaultDictionary
+  dictionary: string = defaultDictionary,
 ) {
   let result = "";
 
