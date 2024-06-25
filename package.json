@@ -21,7 +21,8 @@
   },
   "files": ["dist"],
   "scripts": {
-    "build": "tsup && typedoc --out docs src",
+    "docs": "typedoc --out docs src",
+    "build": "tsup",
     "prettier": "prettier --write \"./*.ts\" \"src/**/*.ts\" \"test/**/*.ts\"",
     "tsc": "tsc",
     "test": "bun test",
