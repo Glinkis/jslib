@@ -7,22 +7,12 @@ export function devicePixelRatio() {
   const ratio = 1;
 
   // Something like node may not have the global window object.
-  if (window == null) {
+  if (typeof window === "undefined") {
     return ratio;
   }
 
-  if (window.devicePixelRatio) {
+  if (typeof window.devicePixelRatio === "undefined") {
     return window.devicePixelRatio;
-  }
-
-  // To account for zoom, change to use deviceXDPI instead of systemXDPI
-  if (
-    screen.systemXDPI &&
-    screen.logicalXDPI &&
-    screen.systemXDPI > screen.logicalXDPI
-  ) {
-    // Only allow for values > 1
-    return screen.systemXDPI / screen.logicalXDPI;
   }
 
   return ratio;

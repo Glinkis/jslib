@@ -1,16 +1,15 @@
-import { expect } from "chai";
-import * as mocha from "mocha";
+import { describe, it, expect } from "bun:test";
 import { rgbaToHex } from "../../src/color/rgbaToHex";
 
 describe("color/rgbaToHex", () => {
   it("converts the colors correctly", () => {
-    expect(rgbaToHex(0, 0, 0)).to.equal("#000000");
-    expect(rgbaToHex(0, 0, 255)).to.equal("#0000ff");
-    expect(rgbaToHex(0, 255, 0)).to.equal("#00ff00");
-    expect(rgbaToHex(255, 0, 0)).to.equal("#ff0000");
-    expect(rgbaToHex(255, 255, 255)).to.equal("#ffffff");
-    expect(rgbaToHex(0, 0, 0, 0)).to.equal("#00000000");
-    expect(rgbaToHex(255, 255, 255, 255)).to.equal("#ffffffff");
-    expect(rgbaToHex(255, 0, 255, 255)).to.equal("#ff00ffff");
+    expect(rgbaToHex(0, 0, 0)).toBe("#000000");
+    expect(rgbaToHex(0, 0, 255)).toBe("#0000ff");
+    expect(rgbaToHex(0, 255, 0)).toBe("#00ff00");
+    expect(rgbaToHex(255, 0, 0)).toBe("#ff0000");
+    expect(rgbaToHex(255, 255, 255)).toBe("#ffffff");
+    expect(rgbaToHex(0, 0, 0, 0)).toBe("#00000000");
+    expect(rgbaToHex(255, 255, 255, 255)).toBe("#ffffffff");
+    expect(rgbaToHex(255, 0, 255, 255)).toBe("#ff00ffff");
   });
 });

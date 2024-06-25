@@ -1,5 +1,4 @@
-import { expect } from "chai";
-import * as mocha from "mocha";
+import { describe, it, expect } from "bun:test";
 import { pointIntersection } from "../../src/vector3/pointIntersection";
 
 const vector1 = { x: 0, y: 0, z: 0 };
@@ -14,31 +13,31 @@ const size2 = 2;
 describe("vector3/pointIntersection", () => {
   it("produces the correct result", () => {
     const result = pointIntersection(vector1, size1, vector1, size1);
-    expect(result).to.be.true;
+    expect(result).toBeTrue();
   });
 
   it("produces the correct result", () => {
     const result = pointIntersection(vector3, size1, vector2, size1);
-    expect(result).to.be.false;
+    expect(result).toBeFalse();
   });
 
   it("produces the correct result", () => {
     const result = pointIntersection(vector3, size2, vector2, size2);
-    expect(result).to.be.true;
+    expect(result).toBeTrue();
   });
 
   it("produces the correct result", () => {
     const result = pointIntersection(vector4, size2, vector1, size2);
-    expect(result).to.be.false;
+    expect(result).toBeFalse();
   });
 
   it("produces the correct result", () => {
     const result = pointIntersection(vector5, size2, vector1, size2);
-    expect(result).to.be.false;
+    expect(result).toBeFalse();
   });
 
   it("produces the correct result", () => {
     const result = pointIntersection(vector6, size2, vector1, size2);
-    expect(result).to.be.false;
+    expect(result).toBeFalse();
   });
 });
