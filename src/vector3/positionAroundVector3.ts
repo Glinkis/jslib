@@ -20,7 +20,7 @@ export function positionAroundVector3(
   vector: IVector3,
   distance: number,
   vertical: number,
-  horizontal: number,
+  horizontal: number
 ): IVector3 {
   const xAxis = roundToPrecision(Math.cos(vertical) * Math.cos(horizontal));
   const yAxis = roundToPrecision(Math.sin(vertical));
@@ -29,6 +29,6 @@ export function positionAroundVector3(
   return {
     x: vector.x + distance * xAxis,
     y: vector.y + distance * yAxis,
-    z: vector.z + distance * zAxis,
+    z: vector.z + distance * zAxis
   };
 }

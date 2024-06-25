@@ -14,7 +14,7 @@ export function inRange(
   value: number,
   min: number,
   max: number,
-  threshold: number = 0,
+  threshold: number = 0
 ) {
   return value + threshold >= min && value - threshold <= max;
 }

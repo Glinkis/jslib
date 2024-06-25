@@ -36,7 +36,7 @@ export function mouseAndTouch(element: HTMLElement) {
 
     touchStart: [] as Array<(event: TouchEvent) => void>,
     touchMove: [] as Array<(event: TouchEvent) => void>,
-    touchEnd: [] as Array<(event: TouchEvent) => void>,
+    touchEnd: [] as Array<(event: TouchEvent) => void>
   };
 
   return Object.freeze({
@@ -110,7 +110,7 @@ export function mouseAndTouch(element: HTMLElement) {
     onTouchEnd(callback: (event: TouchEvent) => void) {
       callbacks.touchEnd.push(callback);
       return this;
-    },
+    }
   });
 
   function onMouseStart(event: MouseEvent) {
@@ -147,7 +147,7 @@ export function mouseAndTouch(element: HTMLElement) {
 }
 
 function triggerCallbacks<T>(callbacks: T[], ...args: any[]) {
-  callbacks.forEach((callback) => triggerCallback(callback, ...args));
+  callbacks.forEach(callback => triggerCallback(callback, ...args));
 }
 
 function triggerCallback<T>(callback: T, ...args: any[]) {

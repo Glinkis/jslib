@@ -11,6 +11,6 @@ export function scale(vector: IVector3, value: number): IVector3 {
   return {
     x: vector.x * value,
     y: vector.y * value,
-    z: vector.z * value,
+    z: vector.z * value
   };
 }

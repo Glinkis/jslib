@@ -12,7 +12,7 @@ import { IVector2 } from "../vector2";
 export function traverse(
   vector: IVector2,
   callback: (vector: IVector2) => void,
-  step: number = 1,
+  step: number = 1
 ) {
   for (let x = 0; x <= vector.x; x += step) {
     for (let y = 0; y <= vector.y; y += step) {

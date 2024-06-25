@@ -20,7 +20,7 @@ export function hexToRgba(hex: string) {
       r,
       g,
       b,
-      a: parseInt(hex.substring(6, 8), 16),
+      a: parseInt(hex.substring(6, 8), 16)
     };
   }
   return null;

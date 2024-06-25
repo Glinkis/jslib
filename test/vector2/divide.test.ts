@@ -10,7 +10,7 @@ describe("vector2/divide", () => {
     expect(divide(vector1, vector1)).toStrictEqual({ x: NaN, y: NaN });
     expect(divide(vector2, vector1)).toStrictEqual({
       x: Infinity,
-      y: Infinity,
+      y: Infinity
     });
     expect(divide(vector2, vector2)).toStrictEqual(vector2);
     expect(divide(vector2, vector3)).toStrictEqual(vector3);

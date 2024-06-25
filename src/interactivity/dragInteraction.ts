@@ -16,27 +16,27 @@ import { positionData } from "./positionData";
 export function dragInteraction(element: HTMLElement) {
   const position = positionData(element);
   const interaction = mouseAndTouch(element)
-    .onMouseStart((e) => {
+    .onMouseStart(e => {
       position.setInitialPosition(e.pageX, e.pageY);
     })
-    .onMouseMove((e) => {
+    .onMouseMove(e => {
       position.setUpdatedPosition(e.pageX, e.pageY);
     })
-    .onMouseEnd((e) => {
+    .onMouseEnd(e => {
       position.setFinalPosition(e.pageX, e.pageY);
     })
-    .onTouchStart((e) => {
+    .onTouchStart(e => {
       position.setInitialPosition(e.touches[0].pageX, e.touches[0].pageY);
     })
-    .onTouchMove((e) => {
+    .onTouchMove(e => {
       position.setUpdatedPosition(e.touches[0].pageX, e.touches[0].pageY);
     })
-    .onTouchEnd((e) => {
+    .onTouchEnd(e => {
       position.setFinalPosition(e.touches[0].pageX, e.touches[0].pageY);
     });
 
   return {
     ...position,
-    ...interaction,
+    ...interaction
   };
 }

@@ -39,7 +39,7 @@ export function bezierValue(points: number[], t: number): number {
  */
 export function bezierDerivative(
   points: number[],
-  t: number,
+  t: number
 ): [number, number] {
   if (points.length === 1) {
     return [points[0], points[0]];

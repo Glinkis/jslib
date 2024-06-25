@@ -56,6 +56,6 @@ export function hslToRgb(h: number, s: number, l: number) {
     r: r * 255,
     // tslint:disable-next-line:object-literal-sort-keys
     g: g * 255,
-    b: b * 255,
+    b: b * 255
   };
 }
