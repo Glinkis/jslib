@@ -5,7 +5,7 @@
  *
  * @param t - [0-1]
  */
-export function easeInOutExpo(t: number) {
+export function easeInOutExpo(t: number): number {
   if (t === 0 || t === 1) {
     return t;
   }

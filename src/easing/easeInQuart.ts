@@ -5,6 +5,6 @@
  *
  * @param t - [0-1]
  */
-export function easeInQuart(t: number) {
+export function easeInQuart(t: number): number {
   return t ** 4;
 }

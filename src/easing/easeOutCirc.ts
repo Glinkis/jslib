@@ -5,6 +5,6 @@
  *
  * @param t - [0-1]
  */
-export function easeOutCirc(t: number) {
+export function easeOutCirc(t: number): number {
   return Math.sqrt(1 - (t - 1) ** 2);
 }

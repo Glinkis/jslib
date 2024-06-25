@@ -5,6 +5,6 @@
  *
  * @param t - [0-1]
  */
-export function easeOutQuad(t: number) {
+export function easeOutQuad(t: number): number {
   return t * (2 - t);
 }

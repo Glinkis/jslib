@@ -13,12 +13,12 @@
  * intersperse(["a", "b", "c"], "x"); // => ["a", "x", "b", "x", "c"]
  * ```
  */
-export function intersperse(array: any[], separator: any): any[] {
+export function intersperse<A, S>(array: A[], separator: S): (A | S)[] {
   if (array.length === 0) {
     return [];
   }
 
   return array
     .slice(1)
-    .reduce((acc, val) => acc.concat([separator, val]), [array[0]]);
+    .reduce<(A | S)[]>((acc, val) => acc.concat([separator, val]), [array[0]]);
 }

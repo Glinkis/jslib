@@ -5,6 +5,6 @@
  *
  * @param t - [0-1]
  */
-export function easeInQuad(t: number) {
+export function easeInQuad(t: number): number {
   return t ** 2;
 }

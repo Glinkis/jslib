@@ -13,7 +13,7 @@
  * getClosestNumber([0, 10, 20], 12);
  * ```
  */
-export function closestNumber(array: number[], num: number) {
+export function closestNumber(array: number[], num: number): number {
   return array.reduce((previous, current) => {
     return Math.abs(current - num) < Math.abs(previous - num)
       ? current

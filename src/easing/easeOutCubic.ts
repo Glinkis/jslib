@@ -5,6 +5,6 @@
  *
  * @param t - [0-1]
  */
-export function easeOutCubic(t: number) {
+export function easeOutCubic(t: number): number {
   return (t - 1) ** 3 + 1;
 }

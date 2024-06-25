@@ -1,5 +1,11 @@
 /** @module color */ /** */
 
+type HSL = {
+  h: number;
+  s: number;
+  l: number;
+};
+
 /** @private */
 function hue(max: number, r: number, g: number, b: number, d: number) {
   let h = 0;
@@ -25,7 +31,7 @@ function hue(max: number, r: number, g: number, b: number, d: number) {
  * @param green - The green color value.
  * @param  blue - The blue color value.
  */
-export function rgbToHsl(red: number, green: number, blue: number) {
+export function rgbToHsl(red: number, green: number, blue: number): HSL {
   const r = red / 255;
   const g = green / 255;
   const b = blue / 255;

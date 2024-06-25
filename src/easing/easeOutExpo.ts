@@ -5,6 +5,6 @@
  *
  * @param t - [0-1]
  */
-export function easeOutExpo(t: number) {
+export function easeOutExpo(t: number): number {
   return t === 1 ? 1 : -(2 ** (-10 * t)) + 1;
 }

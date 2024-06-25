@@ -1,5 +1,11 @@
 /** @module color */ /** */
 
+type RGB = {
+  r: number;
+  g: number;
+  b: number;
+};
+
 /** @private */
 function hue2rgb(p: number, q: number, t: number) {
   if (t < 0) {
@@ -35,7 +41,7 @@ function hue2rgb(p: number, q: number, t: number) {
  * @param s - The saturation.
  * @param l - The lightness.
  */
-export function hslToRgb(h: number, s: number, l: number) {
+export function hslToRgb(h: number, s: number, l: number): RGB {
   let r: number;
   let g: number;
   let b: number;
@@ -54,7 +60,6 @@ export function hslToRgb(h: number, s: number, l: number) {
 
   return {
     r: r * 255,
-    // tslint:disable-next-line:object-literal-sort-keys
     g: g * 255,
     b: b * 255
   };

@@ -12,6 +12,6 @@
  * toArray(document.querySelectorAll('div'));
  * ```
  */
-export function nodeListToArray(nodeList: NodeList): any[] {
+export function nodeListToArray(nodeList: NodeList): Node[] {
   return Array.prototype.slice.call(nodeList);
 }

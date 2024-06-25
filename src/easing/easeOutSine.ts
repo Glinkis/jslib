@@ -5,6 +5,6 @@
  *
  * @param t - [0-1]
  */
-export function easeOutSine(t: number) {
+export function easeOutSine(t: number): number {
   return Math.sin(t * (Math.PI / 2));
 }

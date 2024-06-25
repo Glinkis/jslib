@@ -5,7 +5,7 @@
  *
  * @param t - [0-1]
  */
-export function easeInOutCirc(t: number) {
+export function easeInOutCirc(t: number): number {
   const a = t * 2;
   const b = a - 2;
 

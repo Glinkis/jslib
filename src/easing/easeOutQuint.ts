@@ -5,6 +5,6 @@
  *
  * @param t - [0-1]
  */
-export function easeOutQuint(t: number) {
+export function easeOutQuint(t: number): number {
   return 1 + (t - 1) ** 5;
 }
