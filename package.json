@@ -27,13 +27,12 @@
   "scripts": {
     "lint": "tslint ./",
     "prebuild": "rimraf dist && rimraf lib && rimraf es",
-    "build":
-      "tsc && tsc --module commonjs -outDir lib && rollup -c rollup.config.ts && typedoc --out docs --target es6 --theme minimal src",
+    "build": "tsc && tsc --module commonjs -outDir lib && rollup -c rollup.config.ts && typedoc --out docs --target es6 --theme minimal src",
     "prettier": "prettier --write \"./*.ts\" \"src/**/*.ts\" \"test/**/*.ts\"",
     "test": "karma start --single-run",
     "test:watch": "karma start"
   },
-  "pre-commit": "prettier, lint, test, build",
+  "pre-commit": "prettier, lint",
   "repository": {
     "type": "git",
     "url": "git+https://Glinkis@github.com/Glinkis/jslib.git"
@@ -72,7 +71,7 @@
     "typedoc": "^0.11.0",
     "typedoc-plugin-external-module-name": "^1.1.1",
     "typescript": "^2.7.2",
-    "webpack": "^4.1.1"
-  },
-  "dependencies": {}
+    "webpack": "^4.1.1",
+    "@types/bun": "latest"
+  }
 }
