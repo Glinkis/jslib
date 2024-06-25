@@ -1,12 +1,10 @@
-# .github/workflows/publish.yml
-
-name: Publish
+name: JSR Publish
 
 on:
   workflow_dispatch:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   publish:
