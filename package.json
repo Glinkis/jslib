@@ -25,7 +25,7 @@
   "typings": "lib/index.d.ts",
   "files": ["dist"],
   "scripts": {
-    "build": "tsup",
+    "build": "tsup && typedoc --out docs src",
     "prettier": "prettier --write \"./*.ts\" \"src/**/*.ts\" \"test/**/*.ts\"",
     "tsc": "tsc",
     "test": "bun test",
