@@ -5,8 +5,7 @@ import { Vector3 } from "../vector3";
 const PRECISION = 10e8;
 
 /** @private */
-const roundToPrecision = (value: number) =>
-  Math.round(value * PRECISION) / PRECISION;
+const roundToPrecision = (value: number) => Math.round(value * PRECISION) / PRECISION;
 
 /**
  * Returns a vector positioned around another vector.

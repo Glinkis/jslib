@@ -14,8 +14,5 @@ export function randomRange(
 ): number {
   min = min == null ? Number.MIN_VALUE : min;
   max = max == null ? Number.MAX_VALUE : max;
-  return (
-    Math.min(min, max) +
-    Math.random() * (Math.max(min, max) - Math.min(min, max))
-  );
+  return Math.min(min, max) + Math.random() * (Math.max(min, max) - Math.min(min, max));
 }

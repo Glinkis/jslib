@@ -23,9 +23,7 @@ function newRemoveEventListener(
   }
 
   const listeners = this.eventListeners;
-  const result = listeners.find(
-    l => l.type === type && l.listener === listener
-  );
+  const result = listeners.find(l => l.type === type && l.listener === listener);
 
   if (result) {
     const index = listeners.indexOf(result);

@@ -2,8 +2,7 @@
 import { randomInt } from "./randomInt";
 
 /** @private */
-const defaultDictionary =
-  "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const defaultDictionary = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 /**
  * Returns a random string of the specified length.
@@ -11,10 +10,7 @@ const defaultDictionary =
  * @param length - Length.
  * @param dictionary - A string containing all the symbols to choose from.
  */
-export function randomString(
-  length: number,
-  dictionary: string = defaultDictionary
-): string {
+export function randomString(length: number, dictionary: string = defaultDictionary): string {
   let result = "";
 
   while (result.length !== length) {

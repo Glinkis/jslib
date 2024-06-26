@@ -10,11 +10,6 @@
  *
  * @returns {boolean}
  */
-export function inRange(
-  value: number,
-  min: number,
-  max: number,
-  threshold: number = 0
-): boolean {
+export function inRange(value: number, min: number, max: number, threshold: number = 0): boolean {
   return value + threshold >= min && value - threshold <= max;
 }

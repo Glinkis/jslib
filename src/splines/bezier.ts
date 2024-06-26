@@ -37,10 +37,7 @@ export function bezierValue(points: number[], t: number): number {
  * @param points - Array of control points for the curve.
  * @param t - A value between 0 and 1. 0 is the beginning of the curve, 1 is the end.
  */
-export function bezierDerivative(
-  points: number[],
-  t: number
-): [number, number] {
+export function bezierDerivative(points: number[], t: number): [number, number] {
   if (points.length === 1) {
     return [points[0], points[0]];
   }

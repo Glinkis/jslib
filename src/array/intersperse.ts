@@ -18,7 +18,5 @@ export function intersperse<A, S>(array: A[], separator: S): (A | S)[] {
     return [];
   }
 
-  return array
-    .slice(1)
-    .reduce<(A | S)[]>((acc, val) => acc.concat([separator, val]), [array[0]]);
+  return array.slice(1).reduce<(A | S)[]>((acc, val) => acc.concat([separator, val]), [array[0]]);
 }

@@ -32,11 +32,7 @@ export const isMobile: IsMobile = {
   },
   any() {
     return (
-      this.isAndroid() ||
-      this.isBlackBerry() ||
-      this.isiOS() ||
-      this.isOpera() ||
-      this.isWindows()
+      this.isAndroid() || this.isBlackBerry() || this.isiOS() || this.isOpera() || this.isWindows()
     );
   }
 };
