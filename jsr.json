@@ -8,7 +8,6 @@
     "./color": "./src/color/index.ts",
     "./easing": "./src/easing/index.ts",
     "./event": "./src/event/index.ts",
-    "./interactivity": "./src/interactivity/index.ts",
     "./math": "./src/math/index.ts",
     "./misc": "./src/misc/index.ts",
     "./splines": "./src/splines/index.ts",
