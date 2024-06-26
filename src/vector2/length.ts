@@ -7,6 +7,6 @@ import { dot } from "./dot";
  *
  * @param vector - Vector.
  */
-export function length(vector: IVector2) {
+export function length(vector: IVector2): number {
   return Math.sqrt(dot(vector, vector));
 }
