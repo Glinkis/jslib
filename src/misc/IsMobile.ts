@@ -3,28 +3,33 @@
 /** @private */
 const match = (window || global).navigator.userAgent.match;
 
-export const isMobile = {
-  /** @private */
+type MatcherFn = () => boolean;
+
+type IsMobile = {
+  isAndroid: MatcherFn;
+  isBlackBerry: MatcherFn;
+  isiOS: MatcherFn;
+  isOpera: MatcherFn;
+  isWindows: MatcherFn;
+  any: MatcherFn;
+};
+
+export const isMobile: IsMobile = {
   isAndroid() {
     return !!match(/Android/i);
   },
-  /** @private */
   isBlackBerry() {
     return !!match(/BlackBerry/i);
   },
-  /** @private */
   isiOS() {
     return !!match(/iPhone|iPad|iPod/i);
   },
-  /** @private */
   isOpera() {
     return !!match(/Opera Mini/i);
   },
-  /** @private */
   isWindows() {
     return !!match(/IEMobile/i) || !!match(/WPDesktop/i);
   },
-  /** @private */
   any() {
     return (
       this.isAndroid() ||
