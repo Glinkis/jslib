@@ -1,4 +1,4 @@
-/** @module jslib-utils */ /** */
+/** @module jslib*/ /** */
 import * as array from "./array";
 import * as color from "./color";
 import * as easing from "./easing";
