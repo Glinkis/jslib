@@ -16,7 +16,7 @@ jobs:
       - uses: oven-sh/setup-bun@v1
         with:
           bun-version: latest
-          registry-url: "https://registry.npmjs.org/"
+          registry-url: "https://registry.npmjs.org/:_authToken=${NPM_TOKEN}"
 
       - uses: actions/checkout@v4
 
@@ -24,6 +24,6 @@ jobs:
 
       - run: bun install
       - run: bun run build
-      - run: bunx npm publish
+      - run: bunx npm publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
