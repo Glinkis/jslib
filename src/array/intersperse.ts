@@ -9,7 +9,6 @@
  *
  * @example
  * ```js
- *
  * intersperse(["a", "b", "c"], "x"); // => ["a", "x", "b", "x", "c"]
  * ```
  */

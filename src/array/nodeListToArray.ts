@@ -7,7 +7,6 @@
  *
  * @example
  * ```js
- *
  * // => [div, div, …]
  * toArray(document.querySelectorAll('div'));
  * ```

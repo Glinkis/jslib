@@ -8,7 +8,6 @@
  *
  * @example
  * ```js
- *
  * // Returns 10
  * getClosestNumber([0, 10, 20], 12);
  * ```

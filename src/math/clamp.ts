@@ -11,7 +11,6 @@ import { clampMin } from "./clampMin";
  *
  * @example
  * ```js
- *
  * clamp(5, 0, 10); // Returns 5
  * clamp(-10, 0, 10); // Returns 0
  * clamp(20, 0, 10); // Returns 10
