@@ -1,5 +1,5 @@
 /** @module vector2 */ /** */
-import { IVector2 } from "../vector2";
+import { Vector2 } from "../vector2";
 
 /** @private */
 const PRECISION = 10e8;
@@ -16,10 +16,10 @@ const roundToPrecision = (value: number) =>
  * @param radian - Radian value.
  */
 export function positionAroundVector2(
-  vector: IVector2,
+  vector: Vector2,
   distance: number,
   radian: number
-): IVector2 {
+): Vector2 {
   const xAxis = roundToPrecision(Math.cos(radian));
   const yAxis = roundToPrecision(Math.sin(radian));
 

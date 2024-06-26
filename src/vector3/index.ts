@@ -3,7 +3,7 @@
 /**
  * Represents a three-dimensional vector.
  */
-export interface IVector3 {
+export interface Vector3 {
   x: number;
   y: number;
   z: number;

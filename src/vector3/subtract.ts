@@ -1,5 +1,5 @@
 /** @module vector3 */ /** */
-import { IVector3 } from "../vector3";
+import { Vector3 } from "../vector3";
 
 /**
  * Subtracts two vectors and returns the result.
@@ -7,7 +7,7 @@ import { IVector3 } from "../vector3";
  * @param vector1 - First vector.
  * @param vector2 - Second vector.
  */
-export function subtract(vector1: IVector3, vector2: IVector3): IVector3 {
+export function subtract(vector1: Vector3, vector2: Vector3): Vector3 {
   return {
     x: vector1.x - vector2.x,
     y: vector1.y - vector2.y,

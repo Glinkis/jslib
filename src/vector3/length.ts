@@ -1,5 +1,5 @@
 /** @module vector3 */ /** */
-import { IVector3 } from "../vector3";
+import { Vector3 } from "../vector3";
 import { dot } from "./dot";
 
 /**
@@ -7,6 +7,6 @@ import { dot } from "./dot";
  *
  * @param vector - Vector.
  */
-export function length(vector: IVector3): number {
+export function length(vector: Vector3): number {
   return Math.sqrt(dot(vector, vector));
 }

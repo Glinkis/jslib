@@ -1,5 +1,5 @@
 /** @module vector2 */ /** */
-import { IVector2 } from "../vector2";
+import { Vector2 } from "../vector2";
 
 /**
  * Checks for intersection between two vectors.
@@ -10,9 +10,9 @@ import { IVector2 } from "../vector2";
  * @param size2 - Second size.
  */
 export function pointIntersection(
-  vector1: IVector2,
+  vector1: Vector2,
   size1: number,
-  vector2: IVector2,
+  vector2: Vector2,
   size2: number
 ): boolean {
   return (

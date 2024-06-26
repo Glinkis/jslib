@@ -1,5 +1,5 @@
 /** @module vector2 */ /** */
-import { IVector2 } from "../vector2";
+import { Vector2 } from "../vector2";
 
 /**
  * Loops through the dimensions of a vector.
@@ -10,8 +10,8 @@ import { IVector2 } from "../vector2";
  * @param step - Step size (default: 1).
  */
 export function traverse(
-  vector: IVector2,
-  callback: (vector: IVector2) => void,
+  vector: Vector2,
+  callback: (vector: Vector2) => void,
   step: number = 1
 ): void {
   for (let x = 0; x <= vector.x; x += step) {
