@@ -21,6 +21,8 @@ jobs:
 
       - run: bunx jsr publish
 
-      - run: bun run build && bunx npm publish
+      - run: bun install
+      - run: bun run build
+      - run: bunx npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
