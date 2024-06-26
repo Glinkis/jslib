@@ -1,4 +1,4 @@
-/** @module color */ /** */
+/** @module color */
 
 /** @private */
 function componentToHex(c: number) {

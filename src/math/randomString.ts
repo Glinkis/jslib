@@ -1,4 +1,4 @@
-/** @module math */ /** */
+/** @module math */
 import { randomInt } from "./randomInt";
 
 /** @private */

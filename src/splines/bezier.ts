@@ -1,4 +1,4 @@
-/** @module splines */ /** */
+/** @module splines */
 import { lerp } from "../math/lerp";
 
 /** @private */

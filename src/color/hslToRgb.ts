@@ -1,4 +1,4 @@
-/** @module color */ /** */
+/** @module color */
 
 type RGB = {
   r: number;

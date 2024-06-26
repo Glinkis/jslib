@@ -1,4 +1,4 @@
-/** @module color */ /** */
+/** @module color */
 export * from "./hexToRgba";
 export * from "./hslToRgb";
 export * from "./rgbaToHex";

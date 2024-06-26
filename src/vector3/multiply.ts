@@ -1,4 +1,4 @@
-/** @module vector3 */ /** */
+/** @module vector3 */
 import { Vector3 } from "../vector3";
 
 /**

@@ -1,4 +1,4 @@
-/** @module math */ /** */
+/** @module math */
 import { clampMax } from "./clampMax";
 import { clampMin } from "./clampMin";
 

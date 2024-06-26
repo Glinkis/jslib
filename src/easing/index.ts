@@ -1,4 +1,4 @@
-/** @module easing */ /** */
+/** @module easing */
 export * from "./linear";
 export * from "./easeInSine";
 export * from "./easeOutSine";

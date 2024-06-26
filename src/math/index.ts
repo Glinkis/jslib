@@ -1,4 +1,4 @@
-/** @module math */ /** */
+/** @module math */
 export * from "./clamp";
 export * from "./decimalPlaces";
 export * from "./degreeToRadian";

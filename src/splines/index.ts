@@ -1,2 +1,2 @@
-/** @module splines */ /** */
+/** @module splines */
 export * from "./bezier";

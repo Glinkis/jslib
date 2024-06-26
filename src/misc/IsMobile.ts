@@ -1,4 +1,4 @@
-/** @module misc */ /** */
+/** @module misc */
 
 /** @private */
 const match = (window || global).navigator.userAgent.match;

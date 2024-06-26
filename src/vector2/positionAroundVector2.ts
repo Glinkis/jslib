@@ -1,4 +1,4 @@
-/** @module vector2 */ /** */
+/** @module vector2 */
 import { Vector2 } from "../vector2";
 
 /** @private */
