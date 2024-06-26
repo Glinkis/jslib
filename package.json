@@ -1,5 +1,5 @@
 {
-  "name": "@glinkis/jslib",
+  "name": "jslib-utils",
   "author": "Victor Glindås",
   "version": "2.0.0",
   "description": "A modular javascript utility library.",
@@ -35,6 +35,7 @@
   "scripts": {
     "docs": "typedoc --out docs src",
     "build": "tsup",
+    "prepublish": "bun run build",
     "lint": "prettier --check \"./*.ts\" \"src/**/*.ts\" \"test/**/*.ts\"",
     "prettier": "prettier --write \"./*.ts\" \"src/**/*.ts\" \"test/**/*.ts\"",
     "tsc": "tsc",
